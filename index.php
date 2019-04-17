@@ -45,6 +45,7 @@ if(!empty($_SESSION) && !empty($_SESSION['failed'])){
     <?php for($i=2;$i<=count($pathImg)-1;$i++){ ?>
         <div class="card" style="width: 18rem;">
             <img src="<?='./upload/'.$pathImg[$i]?>" class="card-img-top" alt="...">
+            <p>Le nom du fichier est : <br/> <?=$pathImg[$i]?></p>
             <div class="card-body">
                 <a href="?p=<?=$pathImg[$i]?>" class="btn btn-primary">Delete</a>
             </div>
